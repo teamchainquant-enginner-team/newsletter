@@ -1,0 +1,35 @@
+name: Send test newsletter
+
+on:
+  workflow_dispatch:
+    inputs:
+      email:
+        description: 'Send the test newsletter to this address'
+        required: true
+        default: '0851nicholas@gmail.com'
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Send the test newsletter
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ secrets.RESEND_FROM }}
+          RESEND_REPLY_TO: ${{ secrets.RESEND_REPLY_TO }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          AI_PROVIDER_API_KEY: ${{ secrets.AI_PROVIDER_API_KEY }}
+          COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
+          APP_BASE_URL: ${{ secrets.APP_BASE_URL }}
+          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
+        run: node testEmail.js "${{ github.event.inputs.email }}"
