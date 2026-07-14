@@ -1,0 +1,27 @@
+{
+  "name": "chainquant-newsletter",
+  "version": "1.0.0",
+  "description": "ChainQuant Daily Intelligence \u2014 AI newsletter pipeline (collect \u2192 validate \u2192 write \u2192 render \u2192 send).",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "scheduler": "node scheduler.js",
+    "test:sample": "node testNewsletter.js",
+    "run:once": "node -e \"import('./pipeline.js').then(m=>m.runPipeline({trigger:'manual'}))\"",
+    "send:approved": "node -e \"import('./sendNewsletter.js').then(m=>m.sendLatestApproved())\"",
+    "sample:real": "node sampleReal.js",
+    "check:live": "node checkLive.js",
+    "test:alert": "node -e \"import('./alerts.js').then(m=>m.alertPipelineFailed({runId:'test-run',runDate:new Date().toISOString().slice(0,10),step:'collect:market',error:'This is a TEST alert \u2014 alerting is wired correctly.',trigger:'manual-test'}))\""
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3",
+    "resend": "^4.0.0",
+    "rss-parser": "^3.13.0"
+  }
+}

@@ -1,0 +1,78 @@
+CHAINQUANT DAILY INTELLIGENCE
+
+COILED AND QUIET: BITCOIN HOLDS NEAR $64,412 AS ETF FLOWS LEADS THE BOARD AND $15.0M ETH HITS AN EXCHANGE
+Bitcoin sets the tone as ETF flows and on-chain movement frame the session.
+By the ChainQuant Intelligence Desk · Tue, 14 Jul 2026 13:08:00 GMT
+
+BTC $64,412 +0.42%  ·  ETH $1,741 +0.61%  ·  SOL $74 -1.04%
+mcap $2.21T (+0.38%) · BTC dom 58.5% · F&G 46 Neutral
+
+QUICK TAKE
+ - Bitcoin holds near $64,412 (+0.42% today, -2.10% this week).
+ - The total market is $2.21T, +0.38% on the day; Bitcoin is 58.5% of it.
+ - Sideline cash (stablecoins) sits at $171.00B, rising — a read on buying power.
+ - Hot themes: Real World Assets (+4.80%), Solana Ecosystem (+3.10%), Artificial Intelligence (+2.40%).
+ - 3 whale transfers of $1M+ tracked on-chain, top $15.0M ETH.
+
+OVERNIGHT MARKET SUMMARY
+Bitcoin holds near $64,412, +0.42% over 24 hours and -2.10% across the week. Ether sits at $1,741 (+0.61%) and Solana at $74 (-1.04%). The whole market is worth $2.21T, +0.38% on the day, on $86.00B of volume. 5 of the top 10 are lower on the day, so this is a broad move rather than one coin dragging the average.
+Bitcoin still commands 58.5% of the market, so it is setting the direction; when it moves this way, individual coin stories tend to stop mattering and everything trades together. Sentiment reads 46/100 (Neutral), down from 51 yesterday — a crowd-psychology gauge, not a timing tool.
+
+THE MACRO READ
+ETF flows favor ETH and SOL as bitcoin sees Grayscale-led outflows. These matter to crypto because Bitcoin still trades as a risk asset: when geopolitical tension or rising oil prices push investors toward safety, the money that leaves stocks tends to leave crypto too — and it leaves the most speculative corners first.
+The institutional channel is the second transmission line. Spot ETFs are now the main pipe through which traditional money enters Bitcoin, so their daily net flows are a direct read on whether Wall Street is adding or trimming. Persistent outflows remove a steady bid that the market had grown used to.
+
+FLOWS & POSITIONING
+Funding — the recurring fee traders pay to keep a leveraged bet open — is +0.01% on Bitcoin. Bullish bets are paying to stay open, so the crowd still leans long; that is a slow bleed for longs and a cushion for shorts. Roughly 52.8% of futures accounts sit long against 47.2% short. Open interest — the total value of leveraged bets currently open — stands at $18.40B on Bitcoin; the higher it climbs, the more violent any forced unwind becomes.
+Stablecoins, the cash already parked inside crypto and ready to buy, total $171.00B and are up $360.0M in 24 hours — fresh buying power arriving, which typically precedes demand rather than following it. Liquidations over the past day ran $61.0M on Bitcoin alone — forced selling by traders whose leverage ran out, which is what turns an ordinary dip into a cascade. The practical read: leverage decides how far a move travels, and flows decide whether it lasts.
+
+TOP WHALE MOVEMENTS — PAST 24H
+3 transfers of $1M or more cleared on-chain in the past 24 hours, the largest a $15.0M ETH move. Flows were balanced between exchanges and private wallets, so no clean directional signal emerges from the transfers themselves.
+A caution that matters: a large transfer is not automatically a trade. A meaningful share of whale alerts are exchanges reshuffling their own hot and cold wallets, or custodians consolidating client funds — mechanically identical to a whale repositioning, but with no market intent behind it. The confirmation to look for is whether an exchange inflow is followed by actual selling pressure in price within a day or so; if it is not, treat it as a reshuffle and move on. Every transfer below links to its blockchain record, and where the owner is unidentifiable we say "unknown wallet" rather than guessing a name.
+
+TRENDING NARRATIVES
+The hottest corners of the market today are Real World Assets (+4.80%), Solana Ecosystem (+3.10%), Artificial Intelligence (+2.40%) — these are the themes pulling in money right now. On the social side, the coins people are searching most are HYPE, BONK, JUP, PYTH. ETF flows tops our momentum board, which blends real price moves, news, and community chatter into one score — treat it as "where attention is," not a buy signal.
+
+LEVELS & RISK
+Bitcoin is the level that matters for everything else — when it moves, correlation across the market spikes and individual coin stories stop mattering for a while. It sits at $64,412, -2.10% over the week. The honest framing is conditional, not predictive: if the lower edge of that range gives way on rising volume, the move usually extends because leveraged longs get forced out; if it holds and volume dries up, the range simply continues.
+For risk, the discipline is boring and it works: size positions so that being wrong at the range edge is survivable, and avoid adding leverage into a market where sentiment is already at an extreme. Extremes cut both ways — they mark exhaustion far more often than they mark the start of a trend.
+
+THE OTHER SIDE OF THE TRADE
+The tape is green, so here is the honest bear case. Rallies that come with rising leverage rather than rising spot demand are fragile — they unwind at the first sharp move because the same leverage that lifted price is forced to sell into weakness. Attention-driven narratives can lift a sector's market cap without a single dollar of durable capital committing to it.
+What would invalidate the bullish read: funding climbing while price stalls, exchange inflows rising into strength, or ETF flows failing to confirm the move. If the rally is real, spot demand and flows will show up alongside it.
+
+WATCHLIST FOR TODAY
+The levels and flows below are what decide the next move. Token unlocks add new supply to a market that has to absorb it; US economic data and central-bank commentary set the risk appetite that crypto borrows from; and ETF net flows show whether institutions are stepping in or stepping back. Watch these before adding risk.
+
+TRACKED TRANSFERS ≥ $1M
+  [ethereum] ETH $15.0M — Inflow to Binance — possible sell-side pressure. — https://etherscan.io/tx/0xdef456abc7890123def456abc7890123def456abc7890123def456abc7890123
+  [bitcoin] BTC $11.6M — Wallet-to-wallet transfer; counterparties unlabeled. — https://blockchair.com/bitcoin/transaction/a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2
+  [ethereum] USDC $25.0M — Outflow from Coinbase — withdrawal to private/custody wallet. — https://etherscan.io/tx/0x789abc123def456789abc123def456789abc123def456789abc123def4567890
+
+MOMENTUM BOARD
+  1. ETF flows (42) — ETF flows: momentum 42 — rising attention, but wait for volume to confirm before chasing.
+  2. Solana ecosystem (31) — Solana ecosystem: momentum 31 — rising attention, but wait for volume to confirm before chasing.
+  3. Stablecoins (19) — Stablecoins: momentum 19 — rising attention, but wait for volume to confirm before chasing.
+
+ON THE RADAR
+ - Key Bitcoin price level vs the last few sessions
+ - Token unlocks in the next 24-48h (new supply hitting the market)
+ - US economic data / Fed speakers
+ - Spot ETF inflows vs outflows (BTC, ETH, SOL)
+ - Stablecoin mints/burns (buying power entering or leaving)
+
+SOURCES
+ - Majors — price & 1h/24h/7d change (BTC/ETH/SOL): https://www.coingecko.com/
+ - Fear & Greed Index: 46 (Neutral): https://alternative.me/crypto/fear-and-greed-index/
+ - Perp funding rates (Binance USDⓈ-M): https://www.binance.com/en/futures/funding-history/perpetual/real-time-funding-rate
+ - CoinDesk: ETF flows favor ETH and SOL: https://www.coindesk.com/
+ - The Block: MoneyGram joins Solana as validator: https://www.theblock.co/
+ - Trending searches: HYPE, BONK, JUP, PYTH: https://www.coingecko.com/en/highlights/trending-crypto
+ - Sector performance by market cap (24h): https://www.coingecko.com/en/categories
+ - Stablecoin supply (DefiLlama): https://defillama.com/stablecoins
+ - r/CryptoCurrency community pulse: https://www.reddit.com/r/CryptoCurrency/hot/
+ - USDC $25,000,000 — ethereum: https://etherscan.io/tx/0x789abc123def456789abc123def456789abc123def456789abc123def4567890
+
+This content is for informational purposes only and does not constitute financial, investment, legal, or tax advice. Digital assets are risky and volatile. Always do your own research.
+
+Unsubscribe: %%UNSUB%%

@@ -1,0 +1,24 @@
+# Render blueprint: one web service (subscribe/unsubscribe/admin endpoints)
+# + one daily cron job (builds & sends the digest at 07:00 UTC).
+# Set all secret env vars in the Render dashboard for BOTH services.
+services:
+  - type: web
+    name: chainquant-newsletter
+    runtime: node
+    plan: starter            # avoid "free" — it sleeps; starter stays warm
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /health
+    envVars:
+      - key: RUN_SCHEDULER     # cron handled by the separate job below
+        value: "false"
+      - key: NODE_VERSION
+        value: "22"
+
+jobs:
+  - type: cron
+    name: chainquant-newsletter-daily
+    runtime: node
+    schedule: "0 7 * * *"      # 07:00 UTC daily (Render cron is UTC)
+    buildCommand: npm install
+    startCommand: npm run run:once

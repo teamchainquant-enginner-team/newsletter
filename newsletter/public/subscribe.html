@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Subscribe — ChainQuant Daily Intelligence</title>
+<style>
+  body{margin:0;background:#07090f;color:#e7ecf3;font-family:Inter,-apple-system,Segoe UI,Roboto,Arial,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center}
+  .card{width:100%;max-width:420px;border:1px solid #1b2230;border-radius:14px;padding:30px;background:#0d121c;margin:16px}
+  h1{font-size:20px;margin:0 0 6px} h1 span{color:#1AA3FF}
+  p{color:#8b97a8;font-size:14px;line-height:1.5;margin:0 0 18px}
+  input{width:100%;box-sizing:border-box;padding:12px 14px;border:1px solid #1b2230;border-radius:8px;background:#0a0e16;color:#e7ecf3;font-size:15px}
+  button{width:100%;margin-top:10px;padding:12px;border:0;border-radius:8px;background:#1AA3FF;color:#04121f;font-weight:700;font-size:15px;cursor:pointer}
+  .msg{margin-top:12px;font-size:13px;min-height:18px} .ok{color:#2BC26E} .err{color:#ff5470}
+  .fine{color:#5a6678;font-size:11px;margin-top:14px}
+</style></head>
+<body>
+  <div class="card">
+    <h1>ChainQuant <span>Daily Intelligence</span></h1>
+    <p>The crypto markets, whales, and narratives — translated into plain English. Delivered every morning at 7:00 AM UTC.</p>
+    <input id="email" type="email" placeholder="you@email.com" autocomplete="email" />
+    <button id="btn">Subscribe</button>
+    <div id="msg" class="msg"></div>
+    <div class="fine">Free. Unsubscribe anytime. Not financial advice.</div>
+  </div>
+  <script>
+    const btn = document.getElementById('btn'), email = document.getElementById('email'), msg = document.getElementById('msg');
+    async function go() {
+      msg.textContent = ''; msg.className = 'msg'; btn.disabled = true; btn.textContent = 'Subscribing…';
+      try {
+        const r = await fetch('/api/newsletter/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: email.value }) });
+        const d = await r.json();
+        if (r.ok) { msg.textContent = d.message || "You're subscribed."; msg.className = 'msg ok'; email.value = ''; }
+        else { msg.textContent = d.error || 'Something went wrong.'; msg.className = 'msg err'; }
+      } catch { msg.textContent = 'Network error. Try again.'; msg.className = 'msg err'; }
+      btn.disabled = false; btn.textContent = 'Subscribe';
+    }
+    btn.onclick = go; email.addEventListener('keydown', (e) => { if (e.key === 'Enter') go(); });
+  </script>
+</body></html>
