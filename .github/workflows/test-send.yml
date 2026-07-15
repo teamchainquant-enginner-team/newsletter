@@ -11,16 +11,16 @@ on:
 jobs:
   send:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: newsletter/newsletter
     steps:
       - uses: actions/checkout@v4
-
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Install dependencies
+        working-directory: newsletter/newsletter
         run: npm install --no-audit --no-fund
-
       - name: Send the test newsletter
+        working-directory: newsletter/newsletter
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RESEND_FROM: ${{ secrets.RESEND_FROM }}
