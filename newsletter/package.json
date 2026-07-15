@@ -10,7 +10,7 @@
     "start": "node server.js",
     "scheduler": "node scheduler.js",
     "test:sample": "node testNewsletter.js",
-    "run:once": "node -e \"import('./pipeline.js').then(m=>m.runPipeline({trigger:'manual'}))\"",
+    "run:once": "node runOnce.js",
     "send:approved": "node -e \"import('./sendNewsletter.js').then(m=>m.sendLatestApproved())\"",
     "sample:real": "node sampleReal.js",
     "check:live": "node checkLive.js",
