@@ -17,10 +17,10 @@ jobs:
         with:
           node-version: '22'
       - name: Install dependencies
-        working-directory: newsletter/newsletter
+        working-directory: newsletter
         run: npm install --no-audit --no-fund
       - name: Send the test newsletter
-        working-directory: newsletter/newsletter
+        working-directory: newsletter
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RESEND_FROM: ${{ secrets.RESEND_FROM }}
